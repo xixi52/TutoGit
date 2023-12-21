@@ -11,3 +11,12 @@ Utilisez `git init` pour créer un nouveau grimoire Git, et hop, un fichier .git
 
 ## 3) Préparation du sort avec `git commit`
 Avec `git commit`, enregistrez vos potions dans un sort avec un message descriptif. Pensez à écrire des commentaires magiques pour expliquer pourquoi vous avez ajouté de la licorne en poudre à votre potion de code.
+
+## 4) `git pull` pour rappeler les derniers sorts
+`git pull` est comme une cape d'invisibilité qui rappelle les derniers sorts d'un grimoire distant vers votre copie locale. Idéal pour synchroniser les baguettes magiques dans le royaume du développement collaboratif.
+
+**Contexte :**
+- Développement magique collaboratif : Comme des élèves de Poudlard travaillant ensemble sur une potion magique.
+- Système de contrôle de versions magiques : Git enregistre les différentes versions des sorts, un peu comme les archives de la bibliothèque de Poudlard.
+  
+![8a3s5m](https://github.com/xixi52/TutoGit/assets/66535418/cf9ce84e-9d3d-4f38-a1d6-bb2faeaf40f8)
