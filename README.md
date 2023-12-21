@@ -8,3 +8,6 @@ Utilisez `git init` pour créer un nouveau grimoire Git, et hop, un fichier .git
 
 ## 2) Préparation des potions avec `git add`
 `git add` prépare les potions à être jetées dans le chaudron magique. C'est comme choisir les ingrédients pour une potion magique. `git add .` ajoute tous les ingrédients, tandis que `git add <ingrédient>` cible spécifiquement le cornichon de dragon dont vous avez besoin.
+
+## 3) Préparation du sort avec `git commit`
+Avec `git commit`, enregistrez vos potions dans un sort avec un message descriptif. Pensez à écrire des commentaires magiques pour expliquer pourquoi vous avez ajouté de la licorne en poudre à votre potion de code.
