@@ -28,3 +28,23 @@ Avec `git commit`, enregistrez vos potions dans un sort avec un message descript
 ```bash
 git diff <ingrédient-source> <ingrédient-cible>
 ```
+
+## 6) `git merge` pour fusionner des branches
+`git merge` combine les pouvoirs de deux branches, un peu comme les cours de sorts combinés à Poudlard. Assurez-vous de résoudre les conflits magiques qui surgissent pendant la fusion, sinon, cela pourrait être pire que la potion de Polynectar.
+
+**Utilisation :**
+```bash
+git merge <branche-source>
+```
+
+## 7) `git tag` pour marquer des versions
+`git tag` crée des étiquettes magiques pour marquer des points spécifiques dans l'historique des versions. C'est comme si vous mettiez une étoile d'or sur votre parchemin magique chaque fois que vous atteignez une version stable.
+
+**Création de tags :**
+- Annotés : Associés à un message descriptif, comme un journal de potions.
+- Légers : Références simples à un sort, comme des notes dans le livre des sorts de Poudlard.
+
+**Utilisation :**
+```bash
+git tag -a v1.0 -m "Version 1.0" <hash-du-sort>
+```
