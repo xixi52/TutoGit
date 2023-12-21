@@ -20,3 +20,11 @@ Avec `git commit`, enregistrez vos potions dans un sort avec un message descript
 - Système de contrôle de versions magiques : Git enregistre les différentes versions des sorts, un peu comme les archives de la bibliothèque de Poudlard.
 
 ![8a3pxb](https://github.com/xixi52/TutoGit/assets/5670689/347773ab-cb9d-4f0e-aea9-91e5b6763d4e)
+
+## 5) `git diff` pour examiner les différences
+`git diff` est comme la carte du Maraudeur, vous permettant de voir les différences entre les versions de sorts. Examinez-les avec l'œil d'un mage pour comprendre les subtilités des changements.
+
+**Utilisation :**
+```bash
+git diff <ingrédient-source> <ingrédient-cible>
+```
