@@ -48,3 +48,28 @@ git merge <branche-source>
 ```bash
 git tag -a v1.0 -m "Version 1.0" <hash-du-sort>
 ```
+
+## 8) `git clone` pour copier un grimoire existant
+`git clone` copie un grimoire Git existant dans un nouveau repaire magique. C'est un peu comme emprunter le livre "Les Sortilèges Git" à la bibliothèque de Poudlard, sans déranger les Acromentules.
+
+**Options courantes :**
+- `--branch <nom-de-branche>` : Clone une branche spécifique, comme choisir un chapitre particulier du livre.
+- `--depth <profondeur>` : Crée une réplique superficielle pour économiser de l'espace magique dans votre sac à dos enchanté.
+
+## 9) `git stash` pour mettre de côté des potions temporaires
+`git stash` met de côté des potions sans les "commiter". C'est comme mettre des dragées surprises de Bertie Crochue dans votre poche magique pour plus tard. Pratique pour travailler sur d'autres sorts avant de revenir à votre potion initiale.
+
+**Utilisation :**
+```bash
+git stash
+```
+
+## 10) `git checkout` pour diverses métamorphoses
+La commande `git checkout` permet de se transformer entre les branches, de créer de nouvelles branches, et de revenir à des états antérieurs des potions. C'est comme utiliser la cape d'invisibilité pour explorer différents univers magiques du développement.
+
+**Exemples :**
+```bash
+git checkout [branche]
+git checkout -b [nouvelle-branche]
+git checkout -- [ingrédient]
+```
