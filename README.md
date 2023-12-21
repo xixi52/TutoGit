@@ -73,3 +73,48 @@ git checkout [branche]
 git checkout -b [nouvelle-branche]
 git checkout -- [ingrédient]
 ```
+
+## 11) `git pull` pour rappeler et fusionner les sorts distants
+`git pull` rappelle les derniers sorts d'un grimoire distant et les fusionne avec votre copie locale. C'est essentiel pour maintenir l'harmonie magique dans le royaume du code, un peu comme une séance de sorts conjoints à Poudlard.
+
+**Utilisation :**
+```bash
+git pull origin <nom-de-branche>
+```
+
+## 12) `git log` pour explorer l'historique des sorts
+`git log` vous permet d'explorer l'historique des sorts, affichant les commits avec leurs auteurs, dates et messages associés. Utile pour retracer le chemin parcouru dans le monde magique du développement.
+
+**Utilisation :**
+```bash
+git log
+```
+
+## 13) `git remote` pour gérer les grimoires distants
+`git remote` vous permet de gérer les grimoires distants. Vous pouvez ajouter, afficher ou supprimer des liens vers d'autres royaumes magiques. C'est un peu comme avoir des Portoloins vers d'autres écoles de magie.
+
+**Utilisation :**
+```bash
+git remote add <nom> <url>
+git remote -v
+git remote rm <nom>
+```
+
+## 14) `git fetch` pour récupérer les sorts distants
+`git fetch` récupère les sorts distants sans fusionner automatiquement avec votre copie locale. C'est utile lorsque vous voulez voir ce qui se trame dans d'autres coins du royaume avant de fusionner, un peu comme jeter un œil dans la Pens
+
+ine.
+
+**Utilisation :**
+```bash
+git fetch <grimoire-distant>
+```
+
+## 15) `git rebase` pour réorganiser l'ordre des sorts
+`git rebase` vous permet de réorganiser l'ordre des sorts en les appliquant les uns après les autres. C'est une manière élégante de maintenir un historique de sorts linéaire, un peu comme enseigner un sort de métamorphose à une classe de première année.
+
+
+**Utilisation :**
+```bash
+git rebase <branche-source>
+```
