@@ -18,5 +18,5 @@ Avec `git commit`, enregistrez vos potions dans un sort avec un message descript
 **Contexte :**
 - Développement magique collaboratif : Comme des élèves de Poudlard travaillant ensemble sur une potion magique.
 - Système de contrôle de versions magiques : Git enregistre les différentes versions des sorts, un peu comme les archives de la bibliothèque de Poudlard.
-  
-![8a3s5m](https://github.com/xixi52/TutoGit/assets/66535418/cf9ce84e-9d3d-4f38-a1d6-bb2faeaf40f8)
+
+![8a3pxb](https://github.com/xixi52/TutoGit/assets/5670689/347773ab-cb9d-4f0e-aea9-91e5b6763d4e)
