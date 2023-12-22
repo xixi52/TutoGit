@@ -8,16 +8,10 @@ jobs:
       - run: echo "🧙 Lancement des actions."
       - run: echo "🐧 Le teste s'effectue sur ${{ runner.os }}"
       - name: 🔎 Vérification des symboles
-        uses: check-spelling/check-spelling@v0.0.22
+        uses: rojopolis/spellcheck-github-actions@0.35.0
         with:
-          dictionary_source_prefixes: '{"cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20230509/dictionaries/"}'
-          extra_dictionaries:
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
-            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
-            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
+          source_files: README.md
+          task_name: Markdown
       - name: 🐍 Apprentissage du fourchelangue
         # This is the version of the action for setting up Python, not the Python version.
         uses: actions/setup-python@v4
