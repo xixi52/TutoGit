@@ -30,7 +30,7 @@ jobs:
       - name: 🐍 Niveau de fourchelangue
         run: python -c "import sys; print(sys.version)"
       - name: ⚗️ Analyse des potions
-      - run: |
+        run: |
           pip install pytest pytest-cov
           pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
       - name: ✨ Équilibrage des sortilèges
