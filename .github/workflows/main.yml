@@ -31,9 +31,14 @@ jobs:
       - name: 🐍 Niveau de fourchelangue
         run: python -c "import sys; print(sys.version)"
       - name: ⚗️ Analyse des potions
-        run: |
-          pip install pytest
-          pytest tests/
+        uses: pavelzw/pytest-action@v2
+        with:
+          verbose: true
+          emoji: true
+          job-summary: true
+          custom-arguments: '-q'
+          click-to-expand: true
+          report-title: 'Test Report'
       - name: ✨ Équilibrage des sortilèges
         run: |
           pip install ruff
