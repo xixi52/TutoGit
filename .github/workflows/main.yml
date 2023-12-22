@@ -1,6 +1,6 @@
 name: Demonstration de magie
 run-name: ${{ github.actor }} teste sa baguette 🪄
-on: [pull_request]
+on: [pull_request, issue_comment, pull_request_review, pull_request_review_comment]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
