@@ -1,3 +1,30 @@
-              - name: Check Spelling
-                uses: check-spelling/check-spelling@v0.0.22
-            
+name: Demonstration de magie
+run-name: ${{ github.actor }} teste sa baguette 🪄
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🧙 Lancement des actions."
+      - run: echo "🐧 Le teste s'effectue sur ${{ runner.os }}"
+      - name: Vérification des symboles
+        uses: check-spelling/check-spelling@v0.0.22
+        with:
+          dictionary_source_prefixes: '{"cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20220427/dictionaries/"}'
+          extra_dictionaries:
+            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
+            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
+            cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
+            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
+            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
+            cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
