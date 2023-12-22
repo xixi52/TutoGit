@@ -32,8 +32,8 @@ jobs:
         run: python -c "import sys; print(sys.version)"
       - name: ⚗️ Analyse des potions
         run: |
-          pip install pytest pytest-cov
-          pytest --cov=com --cov-report=xml --cov-report=html
+          pip install pytest
+          pytest
       - name: ✨ Équilibrage des sortilèges
         run: |
           pip install ruff
