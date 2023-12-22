@@ -118,3 +118,48 @@ git fetch <grimoire-distant>
 ```bash
 git rebase <branche-source>
 ```
+
+## 16) `git blame` pour découvrir l'auteur d'un sort
+`git blame` vous révèle l'auteur de chaque ligne dans un fichier, vous aidant à identifier les responsables des sorts particuliers. C'est comme si le Miroir du Risèd vous montrait qui est le meilleur sorcier pour chaque ligne de code.
+
+**Utilisation :**
+```bash
+git blame <fichier>
+```
+
+## 17) `git cherry-pick` pour appliquer des sorts spécifiques
+`git cherry-pick` permet d'appliquer des commits spécifiques d'une branche à une autre. Comme choisir des sorts spécifiques dans un grimoire et les utiliser ailleurs, un peu comme transplanter des mandragores.
+
+**Utilisation :**
+```bash
+git cherry-pick <hash-du-sort>
+```
+
+## 18) `git reset` pour annuler des sorts
+`git reset` annule les sorts en modifiant la position actuelle de la branche. Utilisez avec prudence, car cela peut altérer le flux temporel de votre royaume magique. C'est comme remonter le temps avec un Retourneur de Temps, mais pour votre code.
+
+**Utilisation :**
+```bash
+git reset <sort>
+```
+
+## 19) `git bisect` pour traquer l'origine d'un sort maléfique
+`git bisect` vous aide à traquer l'origine d'un problème en effectuant une recherche binaire dans l'historique des sorts. C'est comme chercher le Horcruxe responsable des problèmes dans votre code.
+
+**Utilisation :**
+```bash
+git bisect start
+git bisect bad
+git bisect good <commit>
+```
+
+## 20) `git remote prune` pour nettoyer les liens inutilisés
+`git remote prune` nettoie les liens vers des grimoires distants qui n'existent plus. Une manière de maintenir la propreté dans votre royaume magique, un peu comme le Balai de Frêne qui nettoie le terrain de Quidditch.
+
+**Utilisation :**
+```bash
+git remote prune <grimoire-distant>
+```
+
+Avec ces nouvelles commandes, votre baguette git devrait être prête à manier une variété de sorts pour toutes les situations magiques dans le royaume du développement logiciel. 🌟🔮
+En résumé, Git offre des fonctionnalités magiques pour la gestion de versions, la collaboration, et la sauvegarde des potions. Ces commandes magiques sont essentielles pour un flux de travail envoûtant. 🌟🔮 N'oubliez pas de jeter une pièce de monnaie dans le puits magique avant chaque `commit` pour la bonne fortune! Et rappelez-vous, le stagiaire du code c'est un peu comme le Choixpeau Magique, il choisit toujours la bonne branche. 🧙‍♂️✨
