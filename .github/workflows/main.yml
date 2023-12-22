@@ -7,6 +7,8 @@ jobs:
     steps:
       - run: echo "🧙 Lancement des actions."
       - run: echo "🐧 Le teste s'effectue sur ${{ runner.os }}"
+      - name: 📚 Récupération des cours
+        uses: actions/checkout@v3
       - name: 🔎 Vérification des symboles
         uses: check-spelling/check-spelling@v0.0.22
         with:
@@ -31,14 +33,9 @@ jobs:
       - name: 🐍 Niveau de fourchelangue
         run: python -c "import sys; print(sys.version)"
       - name: ⚗️ Analyse des potions
-        uses: pavelzw/pytest-action@v2
-        with:
-          verbose: true
-          emoji: true
-          job-summary: true
-          custom-arguments: '-q'
-          click-to-expand: true
-          report-title: 'Test Report'
+        run: |
+          pip install pytest
+          pytest tests/
       - name: ✨ Équilibrage des sortilèges
         run: |
           pip install ruff
