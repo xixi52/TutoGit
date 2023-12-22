@@ -2,7 +2,7 @@ name: Demonstration de magie
 run-name: ${{ github.actor }} teste sa baguette 🪄
 on: [pull_request, issue_comment, pull_request_review, pull_request_review_comment]
 jobs:
-  Explore-GitHub-Actions:
+  Demo-De-Magie:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🧙 Lancement des actions."
@@ -18,7 +18,7 @@ jobs:
             cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
             cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
             cspell:fr_FR_90/src/hunspell-french-dictionaries-v7.0/fr-toutesvariantes.dic
-          only: README.md 
+          only_check_changed_files: True
       - name: 🐍 Apprentissage du fourchelangue
         # This is the version of the action for setting up Python, not the Python version.
         uses: actions/setup-python@v4
@@ -33,7 +33,7 @@ jobs:
       - name: ⚗️ Analyse des potions
         run: |
           pip install pytest pytest-cov
-          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          pytest --cov=com --cov-report=xml --cov-report=html
       - name: ✨ Équilibrage des sortilèges
         run: |
           pip install ruff
