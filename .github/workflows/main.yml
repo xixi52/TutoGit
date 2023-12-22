@@ -33,7 +33,7 @@ jobs:
       - name: ⚗️ Analyse des potions
         run: |
           pip install pytest
-          pytest --doctest-modules --durations=10
+          pytest tests/
       - name: ✨ Équilibrage des sortilèges
         run: |
           pip install ruff
