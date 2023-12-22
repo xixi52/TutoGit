@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: echo "🧙 Lancement des actions."
       - run: echo "🐧 Le teste s'effectue sur ${{ runner.os }}"
-      - name: Vérification des symboles
+      - name: 🔎 Vérification des symboles
         uses: check-spelling/check-spelling@v0.0.22
         with:
           dictionary_source_prefixes: '{"cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20230509/dictionaries/"}'
@@ -29,13 +29,12 @@ jobs:
       # You can test your matrix by printing the current Python version
       - name: 🐍 Niveau de fourchelangue
         run: python -c "import sys; print(sys.version)"
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - name: ⚗️ Analyse des potions
+      - run: |
+          pip install pytest pytest-cov
+          pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+      - name: ✨ Équilibrage des sortilèges
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          pip install ruff
+          ruff --output-format=github .
+        continue-on-error: true
