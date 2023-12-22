@@ -10,7 +10,7 @@ jobs:
       - name: Vérification des symboles
         uses: check-spelling/check-spelling@v0.0.22
         with:
-          dictionary_source_prefixes: '{"cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20220427/dictionaries/"}'
+          dictionary_source_prefixes: '{"cspell": "https://raw.githubusercontent.com/check-spelling/cspell-dicts/v20230509/dictionaries/"}'
           extra_dictionaries:
             cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-classique.dic
             cspell:fr_FR/src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
